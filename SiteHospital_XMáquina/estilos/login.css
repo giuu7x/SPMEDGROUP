@@ -1,0 +1,133 @@
+/*Quadrado principal*/
+#quadradoprincipal{
+    background-color: #78d9d9;
+    position: absolute;
+    height: 550px;
+    width: 980px;
+    margin-left: 270px;
+    margin-top: 110px;
+    border-radius: 15px;
+}
+
+/*Quadrado cabeçalho da logo*/
+#quadradocabeçalho{
+    background-color: #ffffff;
+    position: absolute;
+    height: 130px;
+    width: 980px;
+    margin-left: 270px;
+    margin-top: 95px;
+    border-radius: 15px;
+}
+
+/*Logo SP Medical Group do login*/
+.logo img{
+    position: absolute;
+    height: 100px;
+    margin-left: 630px;
+    margin-top: 110px;
+} 
+
+/*Caixa de inserção de e-mail*/
+#caixemail{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 100px;
+}
+#email{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    background: #ddfdfd;
+    border: #000000;
+    border-radius: 10px;
+    margin-left: 610px;
+    font-size: 20px;
+    margin-top: 300px;
+}
+
+/*Caixa de inserção de senha*/
+#caixasenha{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 420px;
+}
+#senha{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    bottom: 54.88%;
+    background: #ddfdfd;
+    border: #000000;
+    border-radius: 10px;
+    margin-left: 500px;
+    font-size: 20px;
+    margin-top: 500;
+}
+
+/*Letras das palavras e-mail e senha*/
+#palavrasemailsenha{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #000000;
+    position: absolute;
+    text-align: center;
+}
+
+/*Quadrado do botão de login*/
+#quadradologin{
+    background-color: #3d9898;
+    position: absolute;
+    height: 40px;
+    width: 180px;
+    margin-top: 500px;
+    margin-left: 670px;
+    border-radius: 5px;
+}
+
+/*Letra do botão de login*/
+#letralogin{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 28px;
+    margin-top: 9px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+/*Remover o sublinhado das palavras com links*/
+.remove_sublinhado{
+    text-decoration: none;
+}
+
+/*Letras dos links da página*/
+#letraslinks{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #a9a9a9;
+    position: absolute;
+}
+/*Letras do link de ajuda*/
+#letrasajuda{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #a9a9a9;
+    position: absolute;
+}
+
+/*Imagem com o link para a página de ajuda*/
+.imagemajuda img{
+    position: absolute;
+    height: 30px;
+    margin-left: 1100px;
+    margin-top: 110px;
+}

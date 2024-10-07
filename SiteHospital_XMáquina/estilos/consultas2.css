@@ -1,0 +1,172 @@
+/*Quadrado do cabeçalho*/
+#cabeçalho{
+    background-color: #ffffff;
+    position: absolute;
+    height: 135px;
+    width: 1535px;
+    left: 0px;
+    margin-top: 0px;
+}
+
+/*Logo SP Medical Group (sem letras) da consultas 2*/
+.logo img{
+    position: absolute;
+    height: 70px;
+    margin-left: 95px;
+    margin-top: 10px;
+}
+
+/*Quadrado do cabeçalho inferior*/
+#cabeçalhoinferior{
+    background-color: #4D8182;
+    position: absolute;
+    height: 35px;
+    width: 1535px;
+    left: 0px;
+    margin-top: 130px;
+}
+
+/*Quadrado do Rodapé*/
+#rodapé{
+    background-color: #4D8182;
+    position: absolute;
+    height: 80px;
+    width: 1535px;
+    left: 0px;
+    margin-top: 675px;
+}
+
+/*Quadrado Últimas Consultas*/
+#quadradouconsultas{
+    background-color: #78d9d9;
+    position: absolute;
+    height: 510px;
+    width: 280px;
+    left: 0px;
+    margin-top: 165px;
+}
+
+/*Quadrado Próximas Consultas*/
+#quadradopconsultas{
+    background-color: #78d9d9;
+    position: absolute;
+    height: 510px;
+    width: 280px;
+    left: 928px;
+    margin-top: 165px;
+}
+
+/*Letras do cabeçalho*/
+#letrascabeçalho{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #939393;
+    width: 400px;
+    position: absolute;
+}
+
+/*Quadrado do botão retornar*/
+.quadradoretornar{
+    background-color: #78d9d9;
+    position: absolute;
+    height: 45px;
+    width: 350px;
+    left: 580px;
+    margin-top: 685px;
+    border-radius: 40px;
+}
+
+/*Remover o sublinhado das palavras com links*/
+.remove_sublinhado{
+    text-decoration: none;
+}
+
+/*Letras do Botão Retornar aos Horários*/
+#letrasretornar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    width: 400px;
+    position: absolute;
+    margin-left: 655px;
+    margin-top: 693px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/*Imagem da casinha ao lado do nome da página*/
+.imagemcasinha img{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 93px;
+    height: 25px;
+    width: auto;
+}
+
+/*Letras "Últimas Consultas" e "Próximas Consultas"*/
+#letrasuepconsultas{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    width: 400px;
+    position: absolute;
+}
+
+/*Letras "Últimas Consultas" e "Próximas Consultas"*/
+#letrastextosconsultas{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    width: 150px;
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Letras dos textos das colunas*/
+#letrastextos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #4a4a4a;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+}
+
+
+/*Letras dos títulos das colunas*/
+#letrastítuloscolunas{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+}
+
+/*Linhas Horizontais*/
+#linhashorizontais{
+    background-color: #218787;
+    position: absolute;
+    height: 1px;
+    width: 1535px;
+    left: 0px;
+}
+
+/*Linhas Verticais da Tabela*/
+#linhasverticaistabela{
+    background-color: #218787;
+    position: absolute;
+    height: 510px;
+    width: 1px;
+    margin-top: 165px;
+}
+
+/*Linhas Verticais do Cabeçalho*/
+#linhasverticaiscabeçalho{
+    background-color: #218787;
+    position: absolute;
+    height: 85px;
+    width: 1px;
+    margin-top: 0px;
+}

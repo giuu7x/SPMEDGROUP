@@ -1,0 +1,118 @@
+/*Quadrado principal*/
+#quadradoprincipal{
+    background-color: #78d9d9;
+    position: absolute;
+    height: 550px;
+    width: 980px;
+    margin-left: 270px;
+    margin-top: 110px;
+    border-radius: 15px;
+}
+
+/*Quadrado cabeçalho da logo*/
+#quadradocabeçalho{
+    background-color: #ffffff;
+    position: absolute;
+    height: 130px;
+    width: 980px;
+    margin-left: 270px;
+    margin-top: 95px;
+    border-radius: 15px;
+}
+
+/*Logo SP Medical Group do login*/
+.logo img{
+    position: absolute;
+    height: 100px;
+    margin-left: 630px;
+    margin-top: 110px;
+}
+
+/*Quadrado do botão paciente*/
+#quadradopaciente{
+    background-color: #ddfdfd;
+    position: absolute;
+    height: 70px;
+    width: 300px;
+    margin-top: 500px;
+    margin-left: 600px;
+    border-radius: 10px;
+}
+
+/*Letra do botão paciente*/
+#letrasbotãopaciente{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+/*Quadrado do botão addministrador*/
+#quadradoadministrador{
+    background-color: #ddfdfd;
+    position: absolute;
+    height: 70px;
+    width: 300px;
+    margin-top: 400px;
+    margin-left: 600px;
+    border-radius: 10px;
+}
+
+/*Letra do botão administrador*/
+#letrasbotãoadministrador{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+/*Quadrado do botão colaborador*/
+#quadradocolaborador{
+    background-color: #ddfdfd;
+    position: absolute;
+    height: 70px;
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 600px;
+    border-radius: 10px;
+}
+
+/*Letra do botão colaborador*/
+#letrasbotãocolaborador{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+/*Imagem com o link para a página de ajuda*/
+.imagemajuda img{
+    position: absolute;
+    height: 30px;
+    margin-left: 1100px;
+    margin-top: 110px;
+}
+
+/*Letras do link de ajuda*/
+#letrasajuda{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #a9a9a9;
+    position: absolute;
+}
+
+/*Remover o sublinhado das palavras com links*/
+.remove_sublinhado{
+    text-decoration: none;
+}

@@ -1,0 +1,223 @@
+body{
+    overflow-y: hidden ;
+}
+#boxgrande{
+    width: 700px;
+    left: 105px;
+    right: 400px;
+    height: 300px;
+    background-color: #ffff;
+    border-width:80px;
+    padding:160px;
+    margin: 250px;
+    text-align: center;
+    margin-right: 400px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+#boxpequena{
+    width: 700px;
+    left: 100px;
+    right: 400px;
+    height: 180px;
+    background-color: #81d2d2;
+    border-width:80px;
+    padding:160px;
+    margin: 250px;
+    text-align: center;
+    margin-right: 400px;
+    margin-top: 10px;   
+    border-radius: 0px 0px 20px 20px; 
+}
+#img{
+    margin-left: 610px;
+    display: flex;
+    margin-top: -860px;
+    height: 100px;
+    width: 200px;
+}
+
+#boxbranca{
+    width: 615px;
+    left: 50px;
+    right: 10px;
+    height: 100px;
+    background-color: #DEF9F9;
+    padding:160px;
+    margin: 250px;
+    margin-right: -90px;
+    margin-top: -710px;   
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    position: absolute;
+}
+#email{
+    display: flex;
+    margin-left: 350px;
+    margin-top: -650px;
+    position: absolute;
+
+}
+.texto{
+    border-radius: 15px;
+    width: 350px;
+    height: 40px;
+}
+
+#texto2{
+    margin-left: 350px;
+    margin-top: -700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+}
+#nome{
+    display:flex;
+    margin-left: 350px;
+    margin-top: -550px;
+    position: absolute;
+}
+.nome1{
+    border-radius: 15px;
+    width: 350px;
+    height: 40px;
+}
+#texto4{
+    margin-left: 350px;
+    margin-top: -600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+}
+#date{
+    display:flex;
+    margin-left: 350px;
+    margin-top: -442px;
+    position: absolute;
+}
+.texto1{
+    border-radius: 15px;
+    width: 350px;
+    height: 40px;
+}
+#texto3{
+    margin-left: 350px;
+    margin-top: -494px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+}
+#ajuda{
+    margin-left: 1137px;
+    margin-top: -855px;
+
+}
+#seta{
+    margin-left: 266px;
+    margin-top: -35px;
+}
+
+#texto12{
+    margin-left: 160px;
+    margin-top: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffff;
+    position: absolute;
+}
+#caixa-escolha{
+    width: 350px;
+    margin-left: 700px;
+    height: 45px;
+    position: absolute;
+    top: -130px;
+    bottom: 50.88%;
+    border-radius: 30px;
+
+}
+#escolha{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    margin-left: 700px;
+    top: 465px;
+    bottom: 54.88%;
+    border-radius: 30px;
+    font-size: 15px;
+}
+#opcoes{
+    width: 350px;
+    height: 45px;
+    position: absolute;
+    left: 660px;
+    top: 458px;
+    border-color: black;
+    background-color: #fffafa;
+    border-radius: 15px;
+}
+#date1{
+    display:flex;
+    left: 670px;
+    top: -32px;
+    position: absolute;
+}
+.texto4{
+    border-radius: 14px;
+    width: 350px;
+    height: 41px;
+}
+#horário1{
+    display: flex;
+    left: 670px;
+    top: 75px;
+    position: absolute;
+
+}
+.texto5{
+    border-radius: 15px;
+    width: 350px;
+    height: 41px;
+}
+#texto6{
+    margin-left: 670px;
+    margin-top: -83px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+#abc{
+    margin-left: 670px;
+    margin-top: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+/*#boxmedia{
+    background-color: #3D9898;
+    top:30px;
+    left:34px;
+    width: 140px;
+}*/
+
+#boxmedia{
+    background-color: #3D9898;
+    border-width:50px;
+    padding:20px;
+    margin: -185px;
+    text-align: center;
+    right: 298px;
+    top: 345px; 
+    border-radius: 15px;
+    width: 130px;
+    height: 4px;
+    position: absolute;   
+}
+#agendar{
+    top: 150px;
+    left: 573px;
+    font-size: 19px;
+    color: #ffffff;
+    position: absolute;
+    text-decoration: none;
+}
