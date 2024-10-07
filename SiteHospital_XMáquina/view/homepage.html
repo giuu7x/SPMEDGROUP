@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +9,126 @@
     <link rel="shortcut icon" href="Imagens/logospmedicalgroup.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corinthia&family=Poppins:wght@700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Copse&family=Corinthia&family=DM+Sans:opsz@9..40&family=Flamenco:wght@300;400&family=Noto+Sans&family=PT+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
 </head>
-<body style="overflow-x: hidden; overflow-y: hidden; background-color: #ddfdfd; margin-top: 0%; margin-left: 0%;">
 
-    <!--Logo SP Medical Group da homepage-->
-    <div class="logo"><img src="Imagens/logospmedicalgroupletras-home.png" alt=""></div>
+<body style=" background-color: #ddfdfd">
 
-    <!--Quadrados do cabeçalho e do rodapé da homepage-->
-    <div id="cabeçalho"></div>
-    <div id="rodape"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <!--Logo SP Medical Group-->
+                <img src="Imagens/logospmedicalgroupletras.png" class="img-fluid rounded" alt="" id="logo">
+            </div>
+            <div class="col-md-6">
+                <!--Botão Login-->
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                        id="botãologin">Login</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Colaborador</a></li>
+                        <li><a class="dropdown-item" href="#">Administrador</a></li>
+                        <li><a class="dropdown-item" href="#">Paciente</a></li>
+                    </ul>
+                </div>
+                <!--Imagens Redes Sociais-->
+                <img src="Imagens/facebook.png" class="img-fluid rounded" alt="" id="facebook">
+                <img src="Imagens/instagram.png" class="img-fluid rounded" alt="" id="instagram">
+                <img src="Imagens/twitter.png" class="img-fluid rounded" alt="" id="twitter">
+                <!--Barra Pesquisa-->
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid" id="barrapesquisa" style="width: 500px;">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" placeholder="Pesquisar...">
+                            <button class="btn" type="button"><img src="Imagens/lupa.png"
+                                    style="height: 25px;"></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-    <!--Palavras Home e Sobre Nós não linkadas para as páginas-->
-    <div id="letrascabeçalhohome" style="margin-left: 170px; margin-top: -35px;"> Home </div>
-    <div id="letrascabeçalhohome" style="margin-left: 480px; margin-top: -35px;"> Sobre nós </div>
+        <br>
+        <div class="row navbarzinha">
+            <nav class="navbar navbar-expand-sm navbarzinha">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu"><a class="nav-link" href="#">Exames</a></li>
+                            <li class="nav-item menu"><a class="nav-link" href="#">Vacinas</a></li>
+                            <li class="nav-item menu"><a class="nav-link" href="#">Doação de Sangue</a></li>
+                            <li class="nav-item menu"><a class="nav-link" href="#">Consultas</a></li>
+                            <li class="nav-item menu"><a class="nav-link" href="cadastro1.html">Cadastro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 
-    <!--Palavras Cadastro e Consultas linkadas para as páginas-->    
-    <div id="letrascabeçalhohome" style="margin-left: 890px; margin-top: -35px;"><a href="consulta1.html" class="remove_sublinhado" rel="next" style="color: #939393;"> Consultas </a></div>
-    <div id="letrascabeçalhohome" style="margin-left: 1250px; margin-top: -35px; "> <a href="cadastro1.html" class="remove_sublinhado" rel="next" style="color: #939393;"> Cadastro </a> </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Imagem Principal-->
+                <img src="Imagens/imagemprincipalcomp.png" class="img-fluid rounded" alt="" id="imagemprincipal">
+            </div>
+        </div>
+    </div>
 
-    <!--Palavras no rodapé da Homepage-->
-    <div id="letrasrodapehome" style="margin-left: 105px; margin-top: 520px;"> Resultados de exames </div>
-    <div id="letrasrodapehome" style="margin-left: 460px; margin-top: 520px;"> Agenda de exames </div>
-    <div id="letrasrodapehome" style="margin-left: 900px; margin-top: 520px;"> Vacinação </div>
-    <div id="letrasrodapehome" style="margin-left: 1230px; margin-top: 520px;"> Doação de sangue </div>
-
-    <!--Quadrados barra de pesquisa e botão login da Homepage-->
-    <a href="login.html">
-        <div id="quadradologin"> <div id="letralogin"> Login </div></div>
-    </a>
-    <div id="quadradopesquisa"> <div id="letrapesquisa"> Pesquisar... </div></div>
-
-    <!--Imagens do rodapé da Homepage-->
-    <div class="rodape1"><img src="Imagens/rodape1.png" alt=""></div>
-    <div class="rodape2"><img src="Imagens/rodape2.png" alt=""></div>
-    <div class="rodape3"><img src="Imagens/rodape3.png" alt=""></div>
-    <div class="rodape4"><img src="Imagens/rodape4.png" alt=""></div>
-
-    <!--Imagem principal da Homepage-->
-    <img src="Imagens/imagemprincipal.png" alt="" style="width: 815px; margin-left: 470px;">
-    <div class="quadradoesquerda"></div>
-    <div class="quadradodireita"></div>
-
-    <!--Slogan da Homepage-->
-    <div class="letrasslogan" style="margin-left: 250px; margin-top: -340px;"> Cuidamos da </div>
-    <div class="letrasslogan" style="margin-left: 250px; margin-top: -245px;"> maior riqueza do </div>
-    <div class="letrasslogan" style="margin-left: 250px; margin-top: -150px;"> mundo, a saúde! </div>
-
-    <!--Imagens das redes sociais, lupa de pesquisa e ícone de login na Homepage-->
-    <div class="iconefacebook"><img src="Imagens/facebook.png" alt="" style="width: 55px;"></div>
-    <div class="iconeinstagram"><img src="Imagens/instagram.png" alt="" style="width: 55px;"></div>
-    <div class="iconetwitter"><img src="Imagens/twitter.png" alt="" style="width: 60px;"></div>
-    <div class="iconelupa"><img src="Imagens/lupa.png" alt="" style="width: 25px;"></div>
-    <div class="iconelogin"><img src="Imagens/iconelogin.png" alt="" style="width: 35px;"></div>
+    <div class="container-fluid fundoverde">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Imagens/imagemhome1.png" class="img-fluid rounded" alt="" id="imagem1">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Imagens/imagemhome2.png" class="img-fluid rounded" alt="" id="imagem2">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="escrita1">
+                    <h2>Quem somos?</h2>
+                    <p>Somos uma marca pequena, porém de alto renome no território nacional, que valoriza tradição e
+                        confiança. Por isso, escolhemos com muito cuidado os profissionais que cuidarão de você! <br>
+                        Nossa equipe conta com 110 médicos extremamente qualificados, 10 mil clientes cadastrados,
+                        focando sempre na satisfação de nossos usuários. </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="escrita2">
+                    <h2>Nossa missão...</h2>
+                    <p>Prezamos oferecer uma boa vida para as famílias, com ótimas opções de planos de saúde e acesso
+                        aos exames básicos, sempre com custos acessíveis para todos os clientes, pensando na melhor
+                        qualidade e com os profissionais mais qualificados para cada área.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>

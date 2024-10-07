@@ -1,183 +1,87 @@
-/*Quadrado do cabeçalho*/
-#cabeçalho{
-    background-color: #a6eeee;
-    position: static;
+#logo{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+#botãologin{
+    color: white;
+    background-color: #25B4B4;
     height: 40px;
-    width: 1550px;
-    left: 0px;
-    margin-top: 0px;
+    width: 100px;
+    font-size: 17px;
+    margin-left: 270px;
+    margin-top: 40px
 }
 
-/*Quadrado do rodapé*/
-#rodape{
-    top: 560px;
-    width: 1550px;
+#barrapesquisa{
+    margin-left: 258px;
+    margin-top: -20px;
+}
+
+#facebook{
+    width: 40px;
+    margin-left: 390px;
+    margin-top: -70px;
+}
+#instagram{
+    width: 40px;
+    margin-left: 0px;
+    margin-top:-70px;
+}
+#twitter{
+    width: 45px;
+    margin-left: 0px;
+    margin-top: -70px;
+}
+
+.navbarzinha{
+    background-color: #A6EEEE;
+    text-align: center;
+    padding: 0px;
+    height: 30px;
+}
+
+.menu{
+    padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#fundoverde{
+    width: 100%;
+    height: 200px;
+}
+
+.fundoverde{
+    background-color: #25B4B4;
+    height: 670px;
+}
+
+#imagem1{
     height: 250px;
-    position: absolute;
-    background-color: #61B9B9;
+    margin-left: 900px;
+    margin-top: 70px;
 }
 
-/*Letras do cabeçalho da home*/
-#letrascabeçalhohome{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    color: #939393;
-    width: 120px;
-    position: absolute;
+#imagem2{
+    height: 300px;
+    margin-left: 900px;
+    margin-top: 20px;
 }
 
-/*Letras do rodapé da home*/
-#letrasrodapehome{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#escrita1{
+    margin-top: -520px;
+    margin-left: 70px;
     font-size: 20px;
     color: white;
-    position: absolute;
+    font-family: 'DM Sans';
 }
 
-/*Logo SP Medical Group da home*/
-.logo img{
-    height: 140px;
-    margin-left: 135px;
-} 
-
-/*Remover o sublinhado das palavras com links*/
-.remove_sublinhado{
-    text-decoration: none;
-}
-
-/*Quadrado do botão de login*/
-#quadradologin{
-    background-color: #61B9B9;
-    position: absolute;
-    height: 46px;
-    width: 184px;
-    margin-top: -160px;
-    margin-left: 982px;
-    border-radius: 5px;
-}
-
-/*Quadrado da barra de pesquisa*/
-#quadradopesquisa{
-    background-color: #a6eeee;
-    position: absolute;
-    height: 37px;
-    width: 411px;
-    margin-top: -100px;
-    margin-left: 982px;
-    border-radius: 5px;
-}
-
-/*Imagem do rodapé Resultados de Exames*/
-.rodape1{
-    position: absolute;
-    margin-left: 140px;
-    margin-top: 390px;
-}
-
-/*Imagem do rodapé Agenda de Exames*/
-.rodape2{
-    position: absolute;
-    margin-left: 490px;
-    margin-top: 395px;
-}
-
-/*Imagem do rodapé Vacinação*/
-.rodape3{
-    position: absolute;
-    margin-left: 870px;
-    margin-top: 390px;
-}
-
-/*Imagem do rodapé Doação de Sangue*/
-.rodape4{
-    position: absolute;
-    margin-left: 1240px;
-    margin-top: 395px;
-}
-
-/*Quadrado cinza da esquerda da imagem principal na Homepage*/
-.quadradoesquerda{
-    background-color: #D7D7D9;
-    position: absolute;
-    height: 376px;
-    width: 470px;
-    margin-top: -380px;
-    margin-left: 0px;
-}
-
-/*Quadrado cinza da direita da imagem principal na Homepage*/
-.quadradodireita{
-    background-color: #e6e7e9;
-    position: absolute;
-    height: 376px;
-    width: 280px;
-    margin-top: -380px;
-    margin-left: 1280px;
-}
-
-/*Letra do slogan da Homepage*/
-.letrasslogan{
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px;
-    color: #25B4B4;
-    position: absolute;
-    width: 700px;
-    font-weight: bold;
-}
-
-/*Ícone do Facebook na Homepage*/
-.iconefacebook{
-    position: absolute;
-    margin-top: -542px;
-    margin-left: 1200px;
-}
-
-/*Ícone do Instagram na Homepage*/
-.iconeinstagram{
-    position: absolute;
-    margin-top: -540px;
-    margin-left: 1270px;
-}
-
-/*Ícone do Twitter na Homepage*/
-.iconetwitter{
-    position: absolute;
-    margin-top: -538px;
-    margin-left: 1337px;
-}
-
-/*Lupa da barra de pesquisa da Homepage*/
-.iconelupa{
-    position: absolute;
-    margin-top: -475px;
-    margin-left: 1350px;
-}
-
-/*Ícone de Login na Homepage*/
-.iconelogin{
-    position: absolute;
-    margin-top: -532px;
-    margin-left: 1000px;
-}
-
-/*Letra da barra de pesquisa da Homepage*/
-#letrapesquisa{
-    width: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 4px;
-    text-align: justify;
-    color: #537777;
-}
-
-/*Letra do botão de Login na Homepage*/
-#letralogin{
-    width: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-left: 80px;
-    margin-top: 9px;
-    text-align: justify;
-    color: #125a5a;
+#escrita2{
+    margin-top: -250px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: white;
+    font-family: 'DM Sans';
 }

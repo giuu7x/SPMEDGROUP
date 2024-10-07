@@ -1,93 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP Medical Group</title>
-    <link rel="stylesheet" href="cadastro2.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="shortcut icon" href="Imagens/logospmedicalgroup.png" type="image/x-icon">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="cadastro2.css">
 </head>
-<body style="background-color:#DEF9F9;">
-    <div id="boxgrande"></div>
-    <div id="img">
-        <a href="teste.html" rel="next" target="_self" >
-            <img src="Imagens/SP Medical Group.png" alt="SP Medical Group" style="width:300px">
-        </a>
-       
-       
+
+<body style="overflow: hidden; background-color: #DEF9F9; justify-content: center;">
+    <div class="container-fluid" style="max-width: 980px; margin-top: 90px;">
+        <div class="row rounded-4 bg-light justify-content-center">
+            <img src="Imagens/logospmedicalgroupletras.png" alt="" style="max-height: 136px; width: auto;">
+        </div>
+        <div class="row rounded-4" style="max-width: 980px; background-color: #81D2D2;">
+            <div class="col-sm-12 col-md-6 justify-content-center p-4 align-items-center"
+                style="display:flex; flex-direction: column; margin-top: 25px;">
+                <input type="email" placeholder="E-mail ou CPF" style="margin-bottom: 15px;">
+                <input placeholder="Data de nascimento" onfocus="(this.type='date')" onblur="(this.type='date')" style="margin-bottom: 15px;">
+                <input type="text" placeholder="Nome Completo">
+            </div>
+            <div class="col-sm-12 col-md-6 justify-content-center align-items-center"
+                style="display:flex; flex-direction: column; margin-top: 25px;">
+                <input type="number" name="telefone" placeholder="Telefone" style="margin-bottom: 15px;margin-top: 15px;">
+                <div>
+                    <label for="sexo" style="margin-bottom: 15px;">Sexo:</label>
+                    <select name="cars" id="cars" style="margin-bottom: 15px;">
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="none">Prefiro não informar</option>
+                    </select>
+                </div>
+                <input type="text" name="senha" placeholder="Senha" style="margin-bottom: 15px;">
+            </div>
+            <div class="row justify-content-center">
+                <button style="margin-top: 25px;
+                margin-bottom: 25px;
+                color: #ffffff;
+                padding: 5px;
+                text-align: center;
+                width: 120px;
+                border-radius: 1rem;
+                border: none;
+                background-color: #3D9898;"><a href="homepage.html" style="color: white; text-decoration: none;">Criar Conta</a></button>
+            </div>
+        </div>
     </div>
+</body>
 
-    <div id="boxpequena"></div>
-    
-    <div id="email"><input type="email" class="texto"></div>
-
-    <div id="texto2"
-        <p>E-mail ou CPF</p>
-    </div>
-
-    <div id="date"><input type="date" class="texto1"></div>
-
-    <div id="texto3">
-        <p>Nascimento (dia/mês/ano)</p>
-    </div>
-
-    <div id="nome"><input type="email" class="nome1"></div>
-
-    <div id="texto4">
-        <p>Nome Completo</p>
-    </div>
-
-    <div id="telefone"><input type="email" class="telefone1"></div>
-
-    <div id="texto5">
-        <p>Celular</p>
-    </div>
-
-    <div id="texto6">
-        <p>Sexo</p>
-    </div>
-    <div id="masculino"><input type="checkbox" class="masculino1"></div>
-
-    <div id="texto7">
-        <p>Masculino</p>
-    </div>
-
-    <div id="feminino"><input type="checkbox" class="feminino1"></div>
-
-    <div id="texto8">
-        <p>Feminino</p>
-    </div>
-
-    <div id="outro"><input type="email" class="outro1"></div>
-
-    <div id="texto9">
-        <p>Outros</p>
-    </div>
-
-    <div id="nao"><input type="checkbox" class="nao1"></body>
-
-    <div id="texto10">
-        <p>Prefiro não informar</p>
-    </div>
-
-    <div id="senha"><input type="email" class="senha1"></div>
-
-    <div id="texto11">
-        <p>Senha</p>
-    </div>
-    <body style="background-color:#3D9898;">
-        <div id="boxmedia"></div><div id="caixas">
-
-    <div id="texto12">
-        <a href="homepage.html" rel="next" target="_self" id="texto12a">
-        <p>Criar Conta</p>
-    </a>
-    </div>
-
-    <div id="ajuda">
-        <a href="" rel="next" target="_self">
-            <img src="Imagens/ajuda.png" style="width:100px">
-        </a>
-    </div>
 </html>
