@@ -1,39 +1,32 @@
 <?php
-require_once '../controllers/AdminController.php';
-require_once '../controllers/ColaboradorController.php';
+
+// Ativar exibição de erros para depuração
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+session_start();
+
 require_once '../controllers/PacienteController.php';
 
-$action = $_GET['action'] ?? 'showAdmin';
+// Lógica de roteamento
+$request = $_SERVER['REQUEST_URI'];
 
-switch ($action) {
-    case 'createAdmin':
-        $controller = new AdminController();
-        $controller->createAdmin($_POST);
-        break;
-    case 'showAdmin':
-        $controller = new AdminController();
-        $controller->showAdmin();
-        break;
-    case 'createColaborador':
-        $controller = new ColaboradorController();
-        $controller->createColaborador($_POST);
-        break;
-    case 'showColaborador':
-        $controller = new ColaboradorController();
-        $controller->showColaborador();
-        break;
-    case 'createPaciente':
+echo $request;
+
+switch ($request) {
+   
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%c3%a1quina/public/':
         $controller = new PacienteController();
-        $controller->createPaciente($_POST);
+        $controller->showForm();
         break;
-    case 'showPaciente':
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente':
         $controller = new PacienteController();
-        $controller->showPaciente();
+        $controller->savePaciente();
         break;
     default:
-        // Handle unknown action
+        http_response_code(404);
+        echo "Página
+
+ não encontrada.";
         break;
-        ini_set('display_errors', 1);
-        error_reporting(E_ALL);
-        
 }

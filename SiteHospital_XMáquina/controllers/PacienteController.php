@@ -1,15 +1,38 @@
 <?php
-require_once 'models/Paciente.php';
+
+require_once '../model/Paciente.php';
 
 class PacienteController {
-    public function createPaciente($data) {
-        $paciente = new Paciente($data['nome'], $data['cpf'], $data['nascimento'], $data['telefone'], $data['email'], $data['senha']);
-        // Save paciente to the database or perform other actions
-        return $paciente;
+
+    public function showForm() {
+        // Exibe o formulário de cadastro de livros
+        require_once '../view/paciente_view.php';
     }
 
-    public function showPaciente() {
-        // Logic to retrieve and display paciente data
-        include 'views/paciente_view.php';
+    public function savePaciente() {
+        // Recebe dados do formulário
+        $nome = $_POST['nome'];
+        $cpf = $_POST['cpf'];
+        $nascimento = $_POST['nascimento'];
+        $telefone = $_POST['telefone'];
+        $senha = $_POST['senha'];
+        $email = $_POST['email'];
+
+        // Cria um novo livro
+        $paciente = new Paciente();
+        $paciente->nome = $nome;
+        $paciente->cpf = $cpf;
+        $paciente->nascimento = $nascimento;
+        $paciente->telefone = $telefone;
+        $paciente->senha = $senha;
+
+        // Salva no banco de dados
+        if ($paciente->save()) {
+            // Redireciona para a página de listagem
+            header('Location: /MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%c3%a1quina/view/paciente_list.php');
+        } else {
+            echo "Erro ao cadastrar paciente!";
+        }
     }
+
 }

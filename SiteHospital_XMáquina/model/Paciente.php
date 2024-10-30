@@ -1,20 +1,46 @@
 <?php
-class Paciente {
-    private $nome;
-    private $cpf;
-    private $nascimento;
-    private $telefone;
-    private $email;
-    private $senha;
 
-    public function __construct($nome, $cpf, $nascimento, $telefone, $email, $senha) {
-        $this->nome = $nome;
-        $this->cpf = $cpf;
-        $this->nascimento = $nascimento;
-        $this->telefone = $telefone;
-        $this->email = $email;
-        $this->senha = $senha;
+require_once '../config/database.php';
+
+class Paciente {
+    private $conn;
+    private $table_name = "paciente";
+
+    public $nome;
+    public $cpf;
+    public $telefone;
+    public $email;
+    public $senha;
+    public $nascimento;
+
+    public function __construct() {
+        $database = new Database();
+        $this->conn = $database->getConnection();
     }
 
-    // Add getters and setters as needed
+    public function save() {
+        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, telefone, email, senha, nascimento) VALUES (:nome, :cpf, :telefone, :email, :senha, :nascimento)";
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(':nome', $this->nome);
+        $stmt->bindParam(':cpf', $this->cpf);
+        $stmt->bindParam(':telefone', $this->telefone);
+        $stmt->bindParam(':email', $this->email);
+        $stmt->bindParam(':senha', $this->senha);
+        $stmt->bindParam(':nascimento', $this->nascimento);
+    
+
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function getAll() {
+        $query = "SELECT * FROM " . $this->table_name;
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
