@@ -8,8 +8,8 @@
 <body>
     <h1>Pacientes Cadastrados</h1>
 
-    <?php if (empty($paciente)): ?>
-        <p>Nenhum paciente.</p>
+    <?php if (empty($colaborador)): ?>
+        <p>Nenhum Paciente.</p>
     <?php else: ?>
         <table border="1">
             <thead>
@@ -24,16 +24,16 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($pacientes as $paciente): ?>
+                <?php foreach ($colaborador as $colaborador): ?>
                     <tr>
-                       
-                        <td><?php echo htmlspecialchars($paciente['nome']); ?></td>
-                        <td><?php echo htmlspecialchars($paciente['cpf']); ?></td>
-                        <td><?php echo htmlspecialchars($paciente['nascimento']); ?></td>
-                        <td><?php echo htmlspecialchars($paciente['telefone']); ?></td>
-                        <td><?php echo htmlspecialchars($paciente['email']); ?></td>
-                        <td><?php echo htmlspecialchars($paciente['senha']); ?></td>
-                        
+                        <td><?php echo htmlspecialchars($colaborador['id']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['nome']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['cpf']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['nascimento']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['telefone']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['email']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['senha']); ?></td>
+                        <td><?php echo htmlspecialchars($colaborador['created_at']); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

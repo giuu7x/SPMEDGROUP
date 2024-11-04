@@ -23,6 +23,10 @@ switch ($request) {
         $controller = new PacienteController();
         $controller->savePaciente();
         break;
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/list':
+            $controller = new PacienteController();
+            $controller->list();
+            break;
     default:
         http_response_code(404);
         echo "Página
