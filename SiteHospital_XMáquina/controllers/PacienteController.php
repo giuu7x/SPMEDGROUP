@@ -32,7 +32,7 @@ class PacienteController {
         // Salva no banco de dados
         if ($paciente->save()) {
             // Redireciona para a página de listagem
-            header('Location:/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/list');
+            header('Location:/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/html/homepage.html');
         } else {
             echo "Erro ao cadastrar paciente!";
         }

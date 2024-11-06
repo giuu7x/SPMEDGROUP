@@ -8,32 +8,32 @@
 <body>
     <h1>Pacientes Cadastrados</h1>
 
-    <?php if (empty($colaborador)): ?>
-        <p>Nenhum Paciente.</p>
+    <?php if (empty($paciente)): ?>
+        <p>Nenhum paciente.</p>
     <?php else: ?>
         <table border="1">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    
                     <th>nome</th>
                     <th>cpf</th>
                     <th>nascimento</th>
                     <th>telefone</th>
-                    <th>senha</th>
-                    <th>email</th>
+                    <th>Email</th>
+                    <th>Senha</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($colaborador as $colaborador): ?>
+                <?php foreach ($pacientes as $paciente): ?>
                     <tr>
-                        <td><?php echo htmlspecialchars($colaborador['id']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['nome']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['cpf']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['nascimento']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['telefone']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['email']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['senha']); ?></td>
-                        <td><?php echo htmlspecialchars($colaborador['created_at']); ?></td>
+                       
+                        <td><?php echo htmlspecialchars($paciente['nome']); ?></td>
+                        <td><?php echo htmlspecialchars($paciente['cpf']); ?></td>
+                        <td><?php echo htmlspecialchars($paciente['nascimento']); ?></td>
+                        <td><?php echo htmlspecialchars($paciente['telefone']); ?></td>
+                        <td><?php echo htmlspecialchars($paciente['email']); ?></td>
+                        <td><?php echo htmlspecialchars($paciente['senha']); ?></td>
+                        
                     </tr>
                 <?php endforeach; ?>
             </tbody>

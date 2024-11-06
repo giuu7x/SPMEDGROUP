@@ -14,13 +14,13 @@
         <table border="1">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    
                     <th>nome</th>
                     <th>cpf</th>
                     <th>nascimento</th>
                     <th>telefone</th>
-                    <th>senha</th>
-                    <th>email</th>
+                    <th>Email</th>
+                    <th>Senha</th>
                 </tr>
             </thead>
             <tbody>

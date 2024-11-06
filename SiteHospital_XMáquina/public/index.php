@@ -29,8 +29,6 @@ switch ($request) {
             break;
     default:
         http_response_code(404);
-        echo "Página
-
- não encontrada.";
+        echo "Página não encontrada.";
         break;
 }

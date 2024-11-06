@@ -29,6 +29,6 @@
         <input type="submit" value="Cadastrar ">
     </form>
 
-    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_list.php">Ver todos os pacientes</a>
+    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/list">Ver todos os pacientes</a>
 </body>
 </html>

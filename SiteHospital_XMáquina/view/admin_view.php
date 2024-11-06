@@ -64,7 +64,7 @@
                         <input type="text" id="email" name="email"><br><br>
                 
                         <label for="senha">Senha</label>
-                        <input type="number" step="0.01" id="senha" name="senha" required><br><br>
+                        <input type="number" step="1" id="senha" name="senha" required><br><br>
                 
                         <input type="submit" value="Cadastrar ">
                     </form>
