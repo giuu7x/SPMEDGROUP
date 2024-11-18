@@ -43,4 +43,36 @@ class Paciente {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function getById($id) {
+        $query = "SELECT * FROM " . $this->table_name . " WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    // Método para atualizar um livro
+    public function update() {
+        $query = "UPDATE " . $this->table_name . " SET title = :title, author = :author, publication_year = :publication_year, genre = :genre, price = :price WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+
+        $stmt->bindParam(':nome', $this->nome);
+        $stmt->bindParam(':cpf', $this->cpf);
+        $stmt->bindParam(':nascimento', $this->nascimento);
+        $stmt->bindParam(':telefone', $this->telefone);
+        $stmt->bindParam(':senha', $this->senha);
+        
+
+        return $stmt->execute();
+    }
+
+    // Método para excluir um livro pelo título
+    public function deleteByTitle() {
+        $query = "DELETE FROM " . $this->table_name . " WHERE title = :nome";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':nome', $this->nome);
+
+        return $stmt->execute();
+    }
+
 }

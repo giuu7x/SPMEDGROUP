@@ -41,5 +41,6 @@
     <?php endif; ?>
 
     <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_view.php">Cadastrar novo livro</a>
+    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/attpaciente.php">atualizar</a>
 </body>
 </html>

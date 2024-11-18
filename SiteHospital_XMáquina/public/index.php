@@ -27,8 +27,33 @@ switch ($request) {
             $controller = new PacienteController();
             $controller->list();
             break;
-    default:
+ 
         http_response_code(404);
         echo "Página não encontrada.";
         break;
+
+    case '/meu_projeto_livraria/delete-book':
+    require_once '../controllers/PacienteController.php';
+    $controller = new PacienteController();
+    $controller->deleteBookByTitle();
+    break;
+
+    case (preg_match('/\/meu_projeto_livrari(\d+)/', $request, $matches) ? true : false):
+    $id = $matches[1];
+    require_once '../controllers/PacienteController.php';
+    $controller = new PacienteController();
+    $controller->showUpdateForm($nome);
+    break;
+
+    case '/':
+    require_once '../controllers/PacienteController.php';
+    $controller = new PacienteController();
+    $controller->updateBook();
+    break;
+        default:
+        http_response_code(404);
+        echo $request;
+        echo "Página não encontrada.";
+        break;
 }
+

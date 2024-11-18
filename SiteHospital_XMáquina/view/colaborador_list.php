@@ -35,11 +35,20 @@
                         <td><?php echo htmlspecialchars($paciente['senha']); ?></td>
                         
                     </tr>
-                <?php endforeach; ?>
+                <?php endforeach; ?>   
+                <a href="../views/attpaciente.php<?php echo $paciente['nome']; ?>">Atualizar</a>
+            <!-- Formulário para deletar o livro -->
+            <form action="/meu_projeto_livraria/delete-book" method="POST" style="display:inline;">
+                <input type="hidden" name="title" value="<?php echo $paciente['nome']; ?>">
+                <button type="submit">Excluir</button>
+            </form>
+        </td>
+    </tr>
             </tbody>
         </table>
     <?php endif; ?>
 
+    
     <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_view.php">Cadastrar novo livro</a>
 </body>
 </html>
