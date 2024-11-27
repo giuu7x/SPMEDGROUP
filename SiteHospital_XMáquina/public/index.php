@@ -15,7 +15,7 @@ echo $request;
 
 switch ($request) {
    
-    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%c3%a1quina/public/':
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%ca1quina/public/':
         $controller = new PacienteController();
         $controller->showForm();
         break;
@@ -32,23 +32,23 @@ switch ($request) {
         echo "Página não encontrada.";
         break;
 
-    case '/meu_projeto_livraria/delete-book':
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/delete-paciente':
     require_once '../controllers/PacienteController.php';
     $controller = new PacienteController();
-    $controller->deleteBookByTitle();
+    $controller->deletePaciByCpf();
     break;
 
-    case (preg_match('/\/meu_projeto_livrari(\d+)/', $request, $matches) ? true : false):
-    $id = $matches[1];
+    case (preg_match('/\/MVCSPMEDICAL\/SPMEDGROUP\/SiteHospital_XM%C3%A1quina\/view\/attpaciente\/(\d+)/', $request, $matches) ? true : false):
+    $cpf = $matches[1];
     require_once '../controllers/PacienteController.php';
     $controller = new PacienteController();
-    $controller->showUpdateForm($nome);
+    $controller->showUpdateForm($cpf);
     break;
 
-    case '/':
+    case '/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/update':
     require_once '../controllers/PacienteController.php';
     $controller = new PacienteController();
-    $controller->updateBook();
+    $controller->updatePaci();
     break;
         default:
         http_response_code(404);

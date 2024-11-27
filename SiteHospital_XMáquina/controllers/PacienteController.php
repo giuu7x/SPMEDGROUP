@@ -44,14 +44,14 @@ class PacienteController {
        require_once '../view/paciente_list.php';
     }
      // Método para exibir o formulário de atualização
-     public function showUpdateForm($nome) {
+     public function showUpdateForm($cpf) {
         $paciente = new Paciente();
-        $paciente = $paciente->getById($nome);
-        include '../views/attpaciente.php'; // Inclua o arquivo do formulário de atualização
+        $pacientes = $paciente->getById($cpf);
+        include '../view/attpaciente.php'; // Inclua o arquivo do formulário de atualização
     }
 
     // Método para atualizar um livro
-    public function updateBook() {
+    public function updatePaci() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $paciente = new Paciente();
             $paciente->nome = $_POST['nome'];
@@ -70,13 +70,13 @@ class PacienteController {
     }
 
     // Método para excluir um livro pelo título
-    public function deleteBookByTitle() {
+    public function deletePaciByCpf () {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $paciente = new Paciente();
-            $paciente->nome = $_POST['nome'];
+            $paciente->cpf = $_POST['cpf'];
 
-            if ($paciente->deleteByTitle()) {
-                header('/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/list');
+            if ($paciente->deleteByCpf()) {
+                header('Location: /MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/cadastroPaciente/list');
             } else {
                 echo "Erro ao excluir o livro.";
             }
